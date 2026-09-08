@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### KEYS ###
+
+/src/main/resources/application.properties
