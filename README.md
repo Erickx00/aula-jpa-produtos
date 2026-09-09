@@ -1,7 +1,7 @@
 # DAW II — CRUD Básico com Spring Boot
 
 ![Java](https://img.shields.io/badge/Java-17-orange)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.x-brightgreen)
 ![Hibernate](https://img.shields.io/badge/Hibernate-ORM-blueviolet)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791)
 ![Status](https://img.shields.io/badge/Status-Finalizado-green)
