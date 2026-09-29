@@ -25,6 +25,27 @@ public class ProdutoController {
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deletarProduto(@PathVariable Long id) {
+
+        produtoService.deleteById(id);
+
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Void> atualizarProduto(@PathVariable Long id, @RequestBody Produto produto) {
+        Produto produto1 = produtoService.findById(id);
+
+        produto1.setNome(produto.getNome());
+        produto1.setPreco(produto.getPreco());
+        produto1.setCategoria(produto.getCategoria());
+
+        produtoService.atualizarProduto(produto1);
+
+        return  ResponseEntity.status(HttpStatus.CREATED).build();
+    }
+
 
 
     @GetMapping
